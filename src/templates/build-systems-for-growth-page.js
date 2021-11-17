@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout-no-nav"
 import Seo from "../components/seo"
 
 export const pageQuery = graphql`
