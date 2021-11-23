@@ -344,9 +344,41 @@ article img {
   //   .main {
   //     max-width: 760px;
   //   }
+    .main h1 {
+      margin-top: 10%;
+      font-size: 2.5em;
+    }
+    .description h2 {
+      font-size: 2.5em;
+      line-height: 2em;
+    }
     .sidebar {
+      text-align: right;
+    .sidebar-image {
+      float: right;
+    }
+    .landing-form {
       background-color: #95BDBD;
-      text-align: center;
+      border-radius: 20px;
+      margin-left: auto;
+      margin-bottom: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: 467px;
+      .CTA {
+        background-image: url(../../../static/assets/checklist.svg);
+        background-position: 95% 97%;
+        background-repeat: no-repeat;
+        h2 {
+          text-align: left;
+          margin-left: 5%;
+          margin-right: 30%;
+          font-size: 1.2em;
+        }
+        p {
+          margin-right: 30%;
+        }
+      }
       p {
         margin-left: 5%;
         margin-right: 5%;
@@ -363,6 +395,7 @@ article img {
         border-width: 3px;
       }
     }
+   }
   .description {
     line-height: 1.5;
   }

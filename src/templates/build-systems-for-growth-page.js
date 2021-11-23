@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout-no-nav"
 import Seo from "../components/seo"
@@ -38,7 +39,7 @@ const BuildSystemsForGrowth = ({ data }) => {
         sx={{
           display: 'grid',
           gridGap: 3,
-          gridTemplateColumns: ['auto', '1fr 467px'],
+          gridTemplateColumns: ['auto', '1fr 539px'],
         }}>
         <div className="main">
           <h1>{frontmatter.title}</h1>
@@ -48,46 +49,65 @@ const BuildSystemsForGrowth = ({ data }) => {
           />
         </div>
         <div className="sidebar">
-          <form
-            className="contact-form"
-            action="/thanks"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="build-systems-for-growth" />
-            <input type="hidden" name="bot-field" />
-            <p>
-              <label>First Name<br/>
-                <input type="text" name="firstname" required />
-              </label>
-            </p>
-            <p>
-              <label>Last Name<br/>
-                <input type="text" name="lastname" required />
-              </label>
-            </p>
-            <p>
-              <label>Email<br/>
-                <input type="email" name="email" required />
-              </label>
-            </p>
-            <p style={{textAlign:'center'}}>
-              <button
-                className="button"
-                sx={{
-                  variant: "variants.buttonBlueCTA",
-                }}
-                type="submit"
-              >
-                Get Agency Health Checklist{" "}
-                <span className="icon -right">
-                  <RiSendPlane2Line />
-                </span>
-              </button>
-            </p>
-          </form>
+          <StaticImage
+            src="../../static/assets/sidebar photo treatment.png"
+            alt="Paul Chason"
+            placeholder="blurred"
+            layout="fixed"
+            width={539}
+            // height={200}
+            className="sidebar-image"
+          />
+          <div className="landing-form">
+            <div className="CTA">
+              <h2>Is your agency ready for the next level?</h2>
+              <p>Download the agency readiness checklist to find out!</p>
+              {/* <StaticImage
+                src="../../static/assets/checklist.svg"
+                role="presentation"
+              /> */}
+            </div>
+            <form
+              className="contact-form"
+              action="/thanks"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="build-systems-for-growth" />
+              <input type="hidden" name="bot-field" />
+              <p>
+                <label>First Name<br/>
+                  <input type="text" name="firstname" required />
+                </label>
+              </p>
+              <p>
+                <label>Last Name<br/>
+                  <input type="text" name="lastname" required />
+                </label>
+              </p>
+              <p>
+                <label>Email<br/>
+                  <input type="email" name="email" required />
+                </label>
+              </p>
+              <p style={{textAlign:'center'}}>
+                <button
+                  className="button"
+                  sx={{
+                    variant: "variants.buttonBlueCTA",
+                  }}
+                  type="submit"
+                >
+                  Get Agency Health Checklist{" "}
+                  <span className="icon -right">
+                    <RiSendPlane2Line />
+                  </span>
+                </button>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </Layout>
