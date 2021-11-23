@@ -356,22 +356,27 @@ article img {
       text-align: right;
     .sidebar-image {
       float: right;
+      // background-image: url(../../../static/assets/sidebar%20photo%20treatment.png);
+      // width: 539px;
+      // height: 375px;
+      overflow: hidden;
     }
     .landing-form {
       background-color: #95BDBD;
       border-radius: 20px;
       margin-left: auto;
       margin-bottom: auto;
-      padding-top: 40px;
+      padding-top: 50px;
       padding-bottom: 40px;
-      width: 467px;
+      // width: 467px;
+      width: 86.65%;
       .CTA {
         background-image: url(../../../static/assets/checklist.svg);
-        background-position: 95% 97%;
+        background-position: 90% 97%;
         background-repeat: no-repeat;
         h2 {
           text-align: left;
-          margin-left: 5%;
+          margin-left: 10%;
           margin-right: 30%;
           font-size: 1.2em;
         }
@@ -380,8 +385,8 @@ article img {
         }
       }
       p {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
         text-align: left;
         display: block;
       }

@@ -52,20 +52,17 @@ const BuildSystemsForGrowth = ({ data }) => {
           <StaticImage
             src="../../static/assets/sidebar photo treatment.png"
             alt="Paul Chason"
-            placeholder="blurred"
+            loading="eager"
             layout="fixed"
-            width={539}
-            // height={200}
+            placeholder="blurred"
+            width={500}
             className="sidebar-image"
+            objectFit="none"
           />
           <div className="landing-form">
             <div className="CTA">
               <h2>Is your agency ready for the next level?</h2>
               <p>Download the agency readiness checklist to find out!</p>
-              {/* <StaticImage
-                src="../../static/assets/checklist.svg"
-                role="presentation"
-              /> */}
             </div>
             <form
               className="contact-form"
@@ -110,6 +107,7 @@ const BuildSystemsForGrowth = ({ data }) => {
           </div>
         </div>
       </div>
+      <footer></footer>
     </Layout>
   )
 }
