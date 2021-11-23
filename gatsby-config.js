@@ -81,6 +81,13 @@ module.exports = {
               escapeEntities: {},
             },
           },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "external"
+            }
+          },
         ],
       },
     },
@@ -92,6 +99,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: settings.ga,
+        head: true,
       },
     },
     `gatsby-plugin-sitemap`,
