@@ -335,6 +335,38 @@ article img {
     min-height: 200px;
   }
 }
+// Landing page 1
+.landing-page-1 {
+  // .wrapper {
+  //   max-width: 1152px;
+  //   margin: 0 auto;
+  // }
+  //   .main {
+  //     max-width: 760px;
+  //   }
+    .sidebar {
+      background-color: #95BDBD;
+      text-align: center;
+      p {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+        display: block;
+      }
+      label {
+        color: var(--sidebar-green-input-accent);
+        font-weight: normal;
+        text-align: center;
+      }
+      input {
+        border-color: var(--sidebar-green-input-accent);
+        border-width: 3px;
+      }
+    }
+  .description {
+    line-height: 1.5;
+  }
+}
 .site-footer {
   display: flex;
   align-items: center;

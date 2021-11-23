@@ -2,12 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import { RiArrowLeftSLine, RiCheckboxCircleLine } from "react-icons/ri"
 
-import Seo from "../components/seo"
 import Layout from "../components/layout-no-nav"
 
-const DownloadSystems = () => (
+const DownloadReadinessChecklist = () => (
   <Layout className="thanks-page">
-    <Seo title="Thank you" />
     <div
       className="wrapper"
       style={{
@@ -30,4 +28,4 @@ const DownloadSystems = () => (
   </Layout>
 )
 
-export default DownloadSystems
+export default DownloadReadinessChecklist

@@ -7,6 +7,7 @@ const theme = {
     text: "#000",
     background: "#fff",
     primary: "#5C2941",
+    buttonBlueCTA: "#2E50A8",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
     cardBg: "#fff",
@@ -17,8 +18,11 @@ const theme = {
     socialIcons: lightness("siteColor", 0.4),
     socialIconsHover: lightness("siteColor", 0.3),
     buttonColor: lightness("siteColor", 0.9),
+    get buttonBlueCTAColor() {return lightness(this.buttonBlueCTA, 1);},
     buttonHoverBg: lightness("siteColor", 0.4),
+    get buttonBlueCTAHoverBg() {return lightness(this.buttonBlueCTA, 0.55 );},
     buttonHoverColor: lightness("siteColor", 0.8),
+    get buttonBlueCTAHoverColor() {return lightness(this.buttonBlueCTA, 1);},
     modes: {
       dark: {
         text: "#f5f5f5",
@@ -55,6 +59,14 @@ const theme = {
       "&:hover": {
         bg: "buttonHoverBg",
         color: "buttonHoverColor",
+      },
+    },
+    buttonBlueCTA: {
+      bg: "buttonBlueCTA",
+      color: "buttonBlueCTAColor",
+      "&:hover": {
+        bg: "buttonBlueCTAHoverBg",
+        color: "buttonBlueCTAHoverColor",
       },
     },
     socialIcons: {
