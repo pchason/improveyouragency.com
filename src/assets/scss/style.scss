@@ -344,22 +344,41 @@ article img {
   //   .main {
   //     max-width: 760px;
   //   }
-    .main h1 {
-      margin-top: 10%;
-      font-size: 2.5em;
+  .main {
+    min-width: 434px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .container {
+      padding: 0 0;
+    }
+  }
+    .main {
+      h1 {
+        margin-top: 10%;
+        font-size: 2.5em;
+      }
+      p:last-child {
+        margin-bottom: 15%;
+      }
     }
     .description h2 {
       font-size: 2.5em;
-      line-height: 2em;
     }
     .sidebar {
       text-align: right;
+      @media screen and (max-width: 1024px) {
+        max-width: 434px;
+      }
     .sidebar-image {
       float: right;
-      // background-image: url(../../../static/assets/sidebar%20photo%20treatment.png);
-      // width: 539px;
-      // height: 375px;
       overflow: hidden;
+      @media screen and (max-width: 1024px) {
+        width: 434px;
+        height: 347px;
+        float: right;
+        overflow: hidden;
+      }
     }
     .landing-form {
       background-color: #95BDBD;
@@ -368,11 +387,11 @@ article img {
       margin-bottom: auto;
       padding-top: 50px;
       padding-bottom: 40px;
-      // width: 467px;
-      width: 86.65%;
+      width: 434px;
       .CTA {
         background-image: url(../../../static/assets/checklist.svg);
-        background-position: 90% 97%;
+        background-position: 90% 91%;
+        background-size: 20%;
         background-repeat: no-repeat;
         h2 {
           text-align: left;

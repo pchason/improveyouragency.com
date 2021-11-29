@@ -2,8 +2,8 @@
 import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
-import { StaticImage } from "gatsby-plugin-image"
 
+import SidebarPhotoLanding1 from "../components/sidebar-photo-landing-1"
 import Layout from "../components/layout-no-nav"
 import Seo from "../components/seo"
 
@@ -49,16 +49,7 @@ const BuildSystemsForGrowth = ({ data }) => {
           />
         </div>
         <div className="sidebar">
-          <StaticImage
-            src="../../static/assets/sidebar photo treatment.png"
-            alt="Paul Chason"
-            loading="eager"
-            layout="fixed"
-            placeholder="blurred"
-            width={500}
-            className="sidebar-image"
-            objectFit="none"
-          />
+          <SidebarPhotoLanding1 />
           <div className="landing-form">
             <div className="CTA">
               <h2>Is your agency ready for the next level?</h2>
@@ -107,7 +98,6 @@ const BuildSystemsForGrowth = ({ data }) => {
           </div>
         </div>
       </div>
-      <footer></footer>
     </Layout>
   )
 }
