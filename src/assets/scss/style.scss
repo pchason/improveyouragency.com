@@ -337,18 +337,11 @@ article img {
 }
 // Landing page 1
 .landing-page-1 {
-  // .wrapper {
-  //   max-width: 1152px;
-  //   margin: 0 auto;
-  // }
-  //   .main {
-  //     max-width: 760px;
-  //   }
   .main {
     min-width: 400px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $breakpoint-lg) {
     .container {
       padding: 0 0;
     }
@@ -367,13 +360,13 @@ article img {
     }
     .sidebar {
       text-align: right;
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: $breakpoint-lg) {
         max-width: 400px;
       }
     .sidebar-image {
       float: right;
       overflow: hidden;
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: $breakpoint-lg) {
         width: 400px;
         height: 347px;
         float: right;
@@ -396,7 +389,7 @@ article img {
         background-position: 90% 91%;
         background-size: 20%;
         background-repeat: no-repeat;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: $breakpoint-lg) {
           background-position: 90% 88%;
           background-size: 25%;
         }
@@ -447,6 +440,9 @@ article img {
   }
   a:hover {
     color: #fff;
+  }
+  .art-credits {
+    font-size: 10px;
   }
 }
 

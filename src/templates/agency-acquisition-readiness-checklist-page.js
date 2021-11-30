@@ -8,7 +8,7 @@ import Layout from "../components/layout-no-nav"
 import Seo from "../components/seo"
 
 export const pageQuery = graphql`
-  query BuildSystemsForGrowthQuery($id: String!) {
+  query AgencyAcquisitionReadinessChecklistQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -25,7 +25,7 @@ export const pageQuery = graphql`
   }
 `
 
-const BuildSystemsForGrowth = ({ data }) => {
+const AgencyAcquisitionReadinessChecklist = ({ data }) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
@@ -63,7 +63,7 @@ const BuildSystemsForGrowth = ({ data }) => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="form-name" value="build-systems-for-growth" />
+              <input type="hidden" name="form-name" value="agency-acquisition-readiness-checklist" />
               <input type="hidden" name="bot-field" />
               <p>
                 <label>First Name<br/>
@@ -102,7 +102,7 @@ const BuildSystemsForGrowth = ({ data }) => {
   )
 }
 
-export default BuildSystemsForGrowth
+export default AgencyAcquisitionReadinessChecklist
 
 const contactStyles = {
   contactPage: {
