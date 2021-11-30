@@ -14,7 +14,7 @@ const SidebarPhotoLanding1 = () => {
     smallImage: file(relativePath: {eq: "sidebar photo treatment small.png"}) {
       id
       childImageSharp {
-        gatsbyImageData(width: 434)
+        gatsbyImageData(width: 400)
       }
     }
   }

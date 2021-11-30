@@ -345,7 +345,7 @@ article img {
   //     max-width: 760px;
   //   }
   .main {
-    min-width: 434px;
+    min-width: 400px;
   }
 
   @media screen and (max-width: 1024px) {
@@ -368,13 +368,13 @@ article img {
     .sidebar {
       text-align: right;
       @media screen and (max-width: 1024px) {
-        max-width: 434px;
+        max-width: 400px;
       }
     .sidebar-image {
       float: right;
       overflow: hidden;
       @media screen and (max-width: 1024px) {
-        width: 434px;
+        width: 400px;
         height: 347px;
         float: right;
         overflow: hidden;
@@ -384,15 +384,22 @@ article img {
       background-color: #95BDBD;
       border-radius: 20px;
       margin-left: auto;
-      margin-bottom: auto;
+      margin-bottom: 15%;
       padding-top: 50px;
       padding-bottom: 40px;
       width: 434px;
+      @media screen and (max-width: 1024px) {
+        width: 400px;
+      }
       .CTA {
         background-image: url(../../../static/assets/checklist.svg);
         background-position: 90% 91%;
         background-size: 20%;
         background-repeat: no-repeat;
+        @media screen and (max-width: 1024px) {
+          background-position: 90% 88%;
+          background-size: 25%;
+        }
         h2 {
           text-align: left;
           margin-left: 10%;
