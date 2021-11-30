@@ -113,7 +113,7 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
         icon: "static" + settings.meta.iconimage,
-        excludes: [
+        exclude: [
           '/',
           '/about',
           '/contact',

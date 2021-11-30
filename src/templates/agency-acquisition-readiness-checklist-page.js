@@ -58,7 +58,7 @@ const AgencyAcquisitionReadinessChecklist = ({ data }) => {
             <form
               className="contact-form"
               action="/thanks"
-              name="contact"
+              name="agency-acquisition-readiness-checklist"
               method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
