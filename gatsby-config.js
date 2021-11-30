@@ -102,7 +102,20 @@ module.exports = {
         head: true,
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [
+          '/',
+          '/about',
+          '/contact',
+          '/markdown',
+          '/blog',
+          '/download-agency-readiness-checklist',
+          '/thanks',
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -113,15 +126,6 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
         icon: "static" + settings.meta.iconimage,
-        exclude: [
-          '/',
-          '/about',
-          '/contact',
-          '/markdown',
-          '/blog',
-          '/download-agency-readiness-checklist',
-          '/thanks',
-        ],
       },
     },
     "gatsby-plugin-offline",
