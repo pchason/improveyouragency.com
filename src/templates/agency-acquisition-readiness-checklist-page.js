@@ -57,7 +57,7 @@ const AgencyAcquisitionReadinessChecklist = ({ data }) => {
             </div>
             <form
               className="contact-form"
-              action="/thanks"
+              action="/download-agency-readiness-checklist"
               name="agency-acquisition-readiness-checklist"
               method="POST"
               data-netlify="true"

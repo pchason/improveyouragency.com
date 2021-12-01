@@ -417,6 +417,7 @@ article img {
       input {
         border-color: var(--sidebar-green-input-accent);
         border-width: 3px;
+        font-weight: normal;
       }
     }
    }
@@ -427,8 +428,13 @@ article img {
 
 .download-icon {
   margin: auto;
-  padding-left: 2%;
   display: block;
+  height: 10em;
+  width: 12em;
+  background-image: url(../../../static/assets/checklist.svg);
+  background-position: 70%;
+  background-size: 70%;
+  background-repeat: no-repeat;
 }
 
 .site-footer {
