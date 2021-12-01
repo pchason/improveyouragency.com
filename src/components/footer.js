@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 const Footer = () => (
   <footer

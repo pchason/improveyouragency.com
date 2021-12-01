@@ -1,7 +1,5 @@
 import React from "react"
 import { IoIosDownload } from "react-icons/io"
-import SVGIcon from "../../static/assets/checklist.svg"
-// import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
 
 import Layout from "../components/layout-no-nav"
 
