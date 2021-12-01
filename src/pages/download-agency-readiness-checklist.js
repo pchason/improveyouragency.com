@@ -1,6 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
-import { RiArrowLeftSLine, RiCheckboxCircleLine } from "react-icons/ri"
+import { IoIosDownload } from "react-icons/io"
+import SVGIcon from "../../static/assets/checklist.svg"
+import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
 
 import Layout from "../components/layout-no-nav"
 
@@ -12,18 +13,12 @@ const DownloadReadinessChecklist = () => (
         textAlign: "center",
       }}
     >
-      <RiCheckboxCircleLine
-        style={{
-          fontSize: "128px",
-          color: "var(--primary-color)",
-        }}
-      />
-      <h1>Download...</h1>
-      <p>Thank you for getting in touch us. We will get back to you shortly.</p>
-      <Link to="/" className="button">
-        <RiArrowLeftSLine className="icon -left" />
-        Lets go back to Homepage
-      </Link>
+      <a href="/assets/agency-acquisition-readiness-checklist.pdf" target="_blank">
+      <h1>Download the Agency Readiness Checklist</h1>
+        <SVGIcon className="download-icon" />
+        <IoIosDownload size={56} />
+      </a>
+      <p>What growth or acquisition readiness challenges is your agency facing? <a href="https://calendly.com/paulchason/15min" target="_blank">Schedule a 15 minute call with Paul</a> to find out how he can help.</p>
     </div>
   </Layout>
 )

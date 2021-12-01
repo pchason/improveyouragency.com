@@ -162,5 +162,17 @@ module.exports = {
         siteUrl: `https://chasondigital.com`,
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+          options: {
+            tag: "svg",
+            name: "SVGIcon",
+          }
+        }
+      }
+    }
   ],
 }
