@@ -14,7 +14,7 @@ const SidebarPhotoLanding1 = () => {
     smallImage: file(relativePath: {eq: "sidebar photo treatment small.png"}) {
       id
       childImageSharp {
-        gatsbyImageData(width: 400)
+        gatsbyImageData(width: 380)
       }
     }
   }
@@ -22,7 +22,7 @@ const SidebarPhotoLanding1 = () => {
 
   const images = withArtDirection(getImage(data.largeImage), [
     {
-      media: "(max-width: 1024px)",
+      media: "(max-width: 1022px)",
       image: getImage(data.smallImage),
     },
   ])
