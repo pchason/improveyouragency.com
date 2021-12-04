@@ -88,7 +88,7 @@ const AgencyAcquisitionReadinessChecklist = ({ data }) => {
                   }}
                   type="submit"
                 >
-                  Get Agency Health Checklist{" "}
+                  Get Agency Readiness Checklist{" "}
                   <span className="icon -right">
                     <RiSendPlane2Line />
                   </span>
