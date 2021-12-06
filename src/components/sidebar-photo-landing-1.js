@@ -8,13 +8,19 @@ const SidebarPhotoLanding1 = () => {
     largeImage: file(relativePath: {eq: "sidebar photo treatment.png"}) {
       id
       childImageSharp {
-        gatsbyImageData(width: 500)
+        gatsbyImageData(
+          width: 500
+          placeholder: BLURRED
+        )
       }
     }
     smallImage: file(relativePath: {eq: "sidebar photo treatment small.png"}) {
       id
       childImageSharp {
-        gatsbyImageData(width: 380)
+        gatsbyImageData(
+          width: 380
+          placeholder: BLURRED
+        )
       }
     }
   }
@@ -27,7 +33,7 @@ const SidebarPhotoLanding1 = () => {
     },
   ])
 
-  return <GatsbyImage image={images} className="sidebar-image" />
+  return <GatsbyImage image={images} alt="Paul Chason" className="sidebar-image" />
 }
 
 export default SidebarPhotoLanding1
