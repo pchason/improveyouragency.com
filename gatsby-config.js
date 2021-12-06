@@ -162,5 +162,6 @@ module.exports = {
         siteUrl: `https://chasondigital.com`,
       },
     },
+    `gatsby-plugin-force-trailing-slashes`,
   ],
 }
