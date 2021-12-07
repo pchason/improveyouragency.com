@@ -340,6 +340,7 @@ article img {
   .main {
     @media screen and (max-width: $breakpoint-sm) {
       max-width: 375px;
+      grid-row: 2; // Put main on bottom on smartphone.
     }
     h1 {
       margin-top: 10%;
@@ -355,6 +356,9 @@ article img {
   }
   .sidebar {
     text-align: left;
+    @media screen and (max-width: $breakpoint-sm) { // Bring sidebar to top on smartphone.
+      grid-row: 1;
+    }
     .sidebar-image {
       float: right;
       overflow: hidden;
@@ -374,6 +378,7 @@ article img {
       @media screen and (max-width: $breakpoint-sm) {
         width: 380px;
         margin-left: 0%;
+        margin-bottom: 0%;
       }
       form {
         padding: 0 10% 10% 10%;
