@@ -1,7 +1,7 @@
 ---
 template: agency-acquisition-readiness-checklist-page
 slug: /agency-acquisition-readiness-checklist
-title: Scaling a Digital Agency for Acquisition is Complicated
+title: Scaling a Digital Agency for Acquisition is Complicated.
 ---
 
 ## I’ve been where you are.
