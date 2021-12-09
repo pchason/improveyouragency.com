@@ -15,6 +15,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 140)
       frontmatter {
         title
+        description
       }
     }
     site {
@@ -33,7 +34,7 @@ const AgencyAcquisitionReadinessChecklist = ({ data }) => {
     <Layout className="landing-page-1" sx={contactStyles.contactPage}>
       <Seo
         title={frontmatter.title}
-        description={frontmatter.title + " " + site.siteMetadata.title}
+        description={frontmatter.description + " " + site.siteMetadata.title}
       />
       <div className="wrapper"
         sx={{

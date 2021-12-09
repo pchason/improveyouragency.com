@@ -85,7 +85,7 @@ module.exports = {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_blank",
-              rel: "external"
+              rel: "noreferrer"
             }
           },
         ],
@@ -122,8 +122,8 @@ module.exports = {
         name: `Foundation`,
         short_name: `Foundation`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#fff`,
+        theme_color: `#2E50A8`,
         display: `standalone`,
         icon: "static" + settings.meta.iconimage,
       },
