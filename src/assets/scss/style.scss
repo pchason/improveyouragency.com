@@ -91,6 +91,9 @@
   margin: 0 auto;
   max-width: 1240px;
   padding: 0 20px;
+  @media screen and (max-width: $breakpoint-sm) {
+    padding:0;
+  }
 }
 .site-logo {
   font-weight: bold;
@@ -337,10 +340,14 @@ article img {
 }
 // Landing page 1
 .landing-page-1 {
+  .wrapper {
+    justify-items: center;
+  }
   .main {
     @media screen and (max-width: $breakpoint-sm) {
       max-width: 375px;
       grid-row: 2; // Put main on bottom on smartphone.
+      padding:0 20px;
     }
     h1 {
       margin-top: 10%;
