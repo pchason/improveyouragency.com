@@ -1,7 +1,7 @@
 ---
 template: agency-acquisition-readiness-checklist-page
 slug: /agency-acquisition-readiness-checklist
-title: Scaling a Digital Agency for Acquisition is Complicated.
+title: Scaling a digital agency for acquisition is complicated.
 description: "I've been where you are. Building a digital agency to sell requires strategic planning, a never-ending sales pipeline, and an ability to anticipate decisions at each growth stage. Is your agency prepared?"
 ---
 
