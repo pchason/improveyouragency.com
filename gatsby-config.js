@@ -154,15 +154,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: settings.siteUrl,
+        siteUrl: settings.meta.siteUrl,
       },
     },
     `gatsby-plugin-force-trailing-slashes`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: settings.siteUrl,
-        sitemap: settings.siteUrl+'/sitemap.xml',
+        host: settings.meta.siteUrl,
+        sitemap: settings.meta.siteUrl+'/sitemap.xml',
         policy: [
           {
             userAgent: '*',
