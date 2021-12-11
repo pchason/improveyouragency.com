@@ -163,8 +163,14 @@ module.exports = {
       options: {
         host: settings.siteUrl,
         sitemap: settings.siteUrl+'/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    }
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/',
+            disallow: ['/404', '/thanks', '/download-agency-readiness-checklist']
+          }
+        ]
+      },
+    },
   ],
 }
