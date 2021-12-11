@@ -106,11 +106,6 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [
-          '/',
-          '/about',
-          '/contact',
-          '/markdown',
-          '/blog',
           '/download-agency-readiness-checklist',
           '/thanks',
         ],
@@ -134,7 +129,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-4HZNGF3YV3", // Google Analytics / GA
+          "G-8R93DPYTSF", // Google Analytics / GA
           "AW-CONVERSION_ID", // Google Ads / Adwords / AW
           "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
@@ -159,9 +154,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://chasondigital.com`,
+        siteUrl: settings.siteUrl,
       },
     },
     `gatsby-plugin-force-trailing-slashes`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: settings.siteUrl,
+        sitemap: settings.siteUrl+'/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }
