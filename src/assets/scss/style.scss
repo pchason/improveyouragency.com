@@ -357,6 +357,10 @@ article img {
       font-size: 2.5em;
       line-height: normal;
     }
+    p:first-child {
+      padding-top: 15%;
+      color: red;
+    }
     p:last-child {
       margin-bottom: 15%;
     }

@@ -157,7 +157,7 @@ module.exports = {
         siteUrl: settings.meta.siteUrl,
       },
     },
-    `gatsby-plugin-force-trailing-slashes`,
+    // `gatsby-plugin-force-trailing-slashes`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
