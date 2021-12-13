@@ -107,7 +107,7 @@ module.exports = {
       options: {
         exclude: [
           '/download-agency-readiness-checklist',
-          '/thanks',
+          '/404',
         ],
       },
     },
@@ -157,7 +157,6 @@ module.exports = {
         siteUrl: settings.meta.siteUrl,
       },
     },
-    `gatsby-plugin-force-trailing-slashes`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -167,7 +166,7 @@ module.exports = {
           {
             userAgent: '*',
             allow: '/',
-            disallow: ['/404', '/thanks', '/download-agency-readiness-checklist']
+            disallow: ['/404', '/download-agency-readiness-checklist']
           }
         ]
       },
