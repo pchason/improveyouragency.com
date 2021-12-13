@@ -43,14 +43,12 @@ const CTAForm = (props) => {
     <div>
       <form
         className="contact-form"
-        action="/"
         name="agency-acquisition-readiness-checklist"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
-        <input type="hidden" name="form-name" value="agency-acquisition-readiness-checklist" />
         <input type="hidden" name="bot-field" />
         <p>
           <label>First Name<br/>
