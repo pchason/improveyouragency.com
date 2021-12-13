@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
-import { RiSendPlane2Line } from "react-icons/ri"
 
 import SidebarPhotoLanding1 from "../components/sidebar-photo-landing-1"
+import CTAForm from "../components/cta-form"
 import Layout from "../components/layout-no-nav"
 import Seo from "../components/seo"
 
@@ -56,9 +56,10 @@ const AgencyAcquisitionReadinessChecklist = ({ data }) => {
               <h2>Is your agency ready for the next level?</h2>
               <p>Download the agency readiness checklist to find out!</p>
             </div>
-            <form
+            <CTAForm />
+            {/* <form
               className="contact-form"
-              action="/download-agency-readiness-checklist"
+              action="/download-agency-readiness-checklist/"
               name="agency-acquisition-readiness-checklist"
               method="POST"
               data-netlify="true"
@@ -95,7 +96,7 @@ const AgencyAcquisitionReadinessChecklist = ({ data }) => {
                   </span>
                 </button>
               </p>
-            </form>
+            </form> */}
           </div>
         </div>
       </div>

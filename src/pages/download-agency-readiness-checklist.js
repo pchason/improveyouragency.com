@@ -13,7 +13,6 @@ const DownloadReadinessChecklist = () => (
     >
       <a href="/assets/agency-acquisition-readiness-checklist.pdf" target="_blank">
       <h1>Download the Agency Readiness Checklist</h1>
-        {/* <SVGIcon className="download-icon" /> */}
         <div className="download-icon"></div>
         <IoIosDownload size={56} />
       </a>
